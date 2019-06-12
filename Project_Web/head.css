@@ -1,0 +1,475 @@
+
+/* G&eacute;n&eacute;ral */
+@font-face
+{
+    font-family: 'lato';
+    src: url(Lato/Lato/fonts/Lato-Regular.woff)format('woff');
+         url(Lato/Lato/fonts/Lato-Regular.eot)format('eot');
+}
+
+body
+{
+	font-family : lato;
+}
+
+/* ------------------------------------------------------------------------
+
+                                Header
+
+---------------------------------------------------------------------------- */
+
+
+/* Mise en page */
+header 
+{
+	display : flex;
+	text-align : center;
+	margin-bottom : 40px;
+	padding: 20px ;
+
+    background-image: url(ressources/fond_accueil_2.jpeg) ;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%
+	color: white;
+}
+#image 
+{
+	width: 300px;
+    height: 200px;
+    text-align: justify;
+    border: none;
+    margin : 10px;
+}
+#nonimage
+{
+	flex-direction : column;
+	display : flex;
+	text-align : center;
+	justify-content : center;
+	flex : 1;
+}
+#haut 
+{
+	display : flex;
+	flex-direction : column;
+}
+#bas 
+{
+	display : flex;
+	justify-content: flex-end;
+
+}
+#logoinsa
+
+{
+    width: 150px;
+}
+
+
+/* Texte du header */
+#element
+{ 
+	margin-left : 30px;
+	margin-right :30px;
+	padding : 5px;
+
+	text-decoration: none;
+	color: white;
+    font-size: 18px;
+}
+#element:hover
+{
+    text-decoration: underline;
+}
+#titre_ban
+{
+	font-size: 60px ;
+	color: rgb(228,38,24) ;
+    margin-bottom: 10px;
+}
+#date
+{
+	font-size: 35px ;
+	color: white ;
+    margin-bottom: 60px;
+}
+
+
+
+/* --------------------------------------------------------------------------
+
+                                Footer
+
+------------------------------------------------------------------------------ */
+footer
+{
+	display : flex;
+	margin-top: 40px;
+    background-image: url(ressources/fond_accueil_2.jpeg) ;
+    background-attachment: fixed;
+	color: white;
+	justify-content: flex-end;
+}
+footer #element
+{
+	font-size: 15px ;
+	text-decoration: none
+}
+
+
+
+/*-----------------------------------------------------------------------------
+
+                         Section (contenu de la page) 
+
+-------------------------------------------------------------------------------*/
+
+/* Mise en page g&eacute;n&eacute;rale*/
+#dispositon
+{
+    background-color: white ;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.interieur
+{
+    width: 800px;
+    margin: auto ;
+    min-width: 300px;
+    align-self: center;
+}
+
+
+
+
+/* gestion des titres et mises en valeurs */
+h1
+{
+	text-align : center;
+	font-size: 30px ;
+	color: rgb(79,77,80);
+    font-variant: small-caps;
+}
+h2
+{
+	font-size: 25px;
+	color:rgb(228,38,24);
+}
+strong
+{
+	color: #8398a8;
+}
+
+em
+{
+    font-weight: bold;
+    font-style: normal;
+    color:#4F4D50;
+}
+
+/* liens */
+a
+{
+	text-decoration: none ;
+	color: black;
+}
+a:visited
+{
+	color: black;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+
+
+/* liste */
+.liste_sans_puce
+{
+    list-style: none;
+}
+.stop_icone
+{
+    clear: left;
+}
+
+
+/* Image flottante */
+.image_flottante
+{
+    float: right; 
+   padding-left: 10px;
+   padding-right: 10px;
+   margin-left: 20px;
+   height: 250px;
+}
+
+
+/* cadre de cot&eacute; */
+.cadre_flottant
+{
+   float:right; 
+   background-color: rgb(242,242,242);
+   padding-left: 10px;
+   padding-right: 10px;
+   margin-left: 20px;
+   margin-bottom: 20px;
+}
+
+/* Icones */
+.icone
+{
+    height: 40px;
+    float: left;
+    padding-bottom: 5px;
+    padding-right: 12px;
+}
+
+
+/* ----------------------------------------------------------------------------
+
+                                Page recrutement
+
+------------------------------------------------------------------------------- */
+.liste_h
+{
+    list-style: none ;
+    display: flex;
+    justify-content: space-between ;
+    flex-wrap: wrap ;
+}
+.element_h_1
+{
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 8px;
+    background-color: rgb(242,242,242);
+    
+    width:800px ;
+
+    overflow:auto ;
+}
+.element_h
+{
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    background-color: rgb(242,242,242);
+    
+    width:240px;
+
+    overflow:auto ;
+}
+.liste_h h2
+{
+    text-align: center ;
+}
+
+/* ----------------------------------------------------------------------------
+
+                                Page club
+
+------------------------------------------------------------------------------- */
+
+/* Mise en page liste clubs*/
+#listeclubs
+{
+    list-style-type: none;
+    /*display: inline; */
+    display: flex;
+    flex-direction : column
+}
+#divlogoclub
+{
+    display : flex;
+}
+.divlogoclub2
+{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    width: 800px;
+    align-items: center;
+}
+
+
+/* id logos */
+.logoclub
+{
+    width: 250px;
+    /*height: 200px ;*/
+    /*border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;*/
+    padding: 10px;
+}
+.logoclub2
+{
+   float: right; 
+   padding-left: 10px;
+   padding-right: 10px;
+   margin-left: 20px;
+   max-height: 250px;
+   max-width: 300px;
+   min-height: 200px;
+   
+   
+   
+}
+
+
+
+
+/*-----------------------------------------------------------------------------
+
+                                Page plan INSA 
+
+-------------------------------------------------------------------------------*/
+
+
+#Plan_Departement
+{
+    width: 400px;
+    text-align : center;
+}
+
+
+/*----------------------------------------------------------------------------
+
+                                 Page Planning
+
+------------------------------------------------------------------------------ */
+.Planning
+{
+    text-align : center;
+    margin : 5px;
+    width : 170px;
+    border-radius: 8px;
+    background-color: rgb(242,242,242);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}    
+.Planningbas
+{
+    text-align : center;
+    margin : 5px;
+    width : 750px;
+    border-radius: 8px;
+    background-color: rgb(242,242,242);
+    padding : 20px;
+}
+.Englobe_plannings
+{
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : space-around; 
+}
+/* Texte planning */
+.Planning a
+{
+    color:rgb(228,38,24);
+    font-weight : bold;
+}
+.Planningbas a
+{
+    color:rgb(228,38,24);
+    font-weight : bold;
+}
+
+.Planning p	
+{
+	text-align : center;
+}
+
+
+
+/* --------------------------------------------------------------------------
+
+                                Page contact
+
+------------------------------------------------------------------------------- */
+.contact
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+.element_contact
+{
+    width: 300px;
+    margin: 20px;
+}
+
+/*-----------------------------------------------------------------------------
+
+                                Navigation (Clubs et departements)
+
+-------------------------------------------------------------------------------*/
+
+/* D&eacute;finition navigation */
+nav
+{
+    background-color: rgb(242,242,242) ;
+    word-wrap: break-word;
+    padding-right: 15px ;
+    padding-left: 15px;
+    margin-top: 15px;
+
+    color: #8398a8;
+}
+
+/* mise en page navigation et sections */
+#nav_section
+{
+    display: flex;
+    flex-direction: row ;
+    width: 800px;
+    margin: auto ;
+    min-width: 300px;
+}
+#contenu_section
+{
+    flex: 4 ;
+    padding-left: 15px;
+}
+#navigation
+{
+    height: 350px ;
+    flex: 1 ;
+}
+
+/* Mise en page sp&eacute;ciale pour les clubs*/
+#navigationclubs
+{
+    height:290px;
+    flex:1;
+}
+
+/* Texte navigation */
+#titre_nav
+{
+    font-size: 20px ;
+}
+#departement
+{
+    font-size: 18px;
+    color: #8398a8;
+}
+nav a
+{
+    color:#8398a8;
+}
+nav a:visited
+{
+    color:#8398a8;
+}
+
